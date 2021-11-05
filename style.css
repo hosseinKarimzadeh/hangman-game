@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Zen+Antique+Soft&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #dedede;
+    font-family: 'Zen Antique Soft', serif;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #273036;
+}
+
+header {
+    user-select: none;
+    font-family: 'Playfair Display', serif;
+    padding: 20px;
+    color: #ddd;
+    font-size: 1.5rem;
+    background-color: #273036;
+}
+
+h1 {
+    text-align: center;
+}
+
+.game-container {
+    width: 550px;
+    margin: auto auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 50px;
+    font-size: 1.7rem;
+}
+
+.result {
+    font-weight: bold;
+    user-select: none;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#letters {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+#letters div {
+    cursor: pointer;
+    margin: 5px;
+    padding-top: 0.5em;
+    border: 1px solid #273036;
+    border-radius: 100%;
+    user-select: none;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 0.5;
+    overflow: hidden;
+}
+
+#letters div:hover {
+    background-color: #9b9b9b;
+}
+
+#clue p {
+    user-select: none;
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 0.5em;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+#letters div.used {
+    background-color: #9b9b9b;
+    opacity: 0.5;
+}
+
+section#image {
+    text-align: center;
+}
+
+img {
+    width: 100px;
+}
+
+@media screen and (max-width:1025px) {
+    img {
+        width: 120px;
+    }
+    #clue p {
+        font-size: 3.5rem;
+    }
+    .game-container {
+        width: 450px;
+        margin-top: 80px;
+        font-size: 2rem;
+    }
+    .result {
+        margin-top: 70px;
+        font-size: 2rem;
+    }
+    #letters {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header {
+        padding: 15px;
+        font-size: 1rem;
+    }
+    img {
+        width: 120px;
+    }
+    #clue p {
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+    .game-container {
+        width: 280px;
+        margin-top: 40px;
+        font-size: 1.4rem;
+    }
+    .result {
+        margin-top: 40px;
+        font-size: 1rem;
+    }
+    #letters {
+        margin-top: 40px;
+    }
+    #letters div {
+        margin: 3px;
+    }
+}
